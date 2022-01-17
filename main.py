@@ -53,56 +53,56 @@ I am small media or file to telegra.ph link uploader bot.**
 
 HELP_TEXT = """**Hey, Follow these steps:**
 
-▷ Just give me a media under 5MB.
-▷ Then I will download it.
-▷ I will then upload it to the telegra.ph link.
+✪ Just give me a media under 5MB.
+✪ Then I will download it.
+✪ I will then upload it to the telegra.ph link.
 """
 
-ABOUT_TEXT = """--**About Me**-- 😎
+ABOUT_TEXT = """--**Here Is About Me**-- 😎
 
-🤖 **Name :** [TGraphRoBot](https://telegram.me/TGraphRoBot)
+🤖 **Name :** [TGraphRoBot](https://telegram.me/TeleRoid_Image2Link_Bot)
 
-👨‍💻 **Developer :** [Zaute](https://t.me/zautekm)
+👨‍💻 **Developer :** [Pred∆tor](https://t.me/TheTeleRoid)
 
-📢 **Channel :** [Jos Projects](https://telegram.me/josprojects)
+📢 **Channel :** [TeleRoid Bots](https://telegram.me/TeleRoidGroup)
 
-👥 **Feedback :** [Tap here](https://telegram.me/jospsupportbot)
+👥 **Feedback :** [Tap here](https://telegram.me/TeleRoid14)
 
-🌐 **Source :** [👉 Press me](https://github.com/ZauteKm/Image-Upload-Bot)
+🌐 **Source :** [👉 Press me](https://github.com/PredatorHackerzZ)
 
 📝 **Language :** [Python3](https://python.org)
 
 🧰 **Framework :** [Pyrogram](https://pyrogram.org)"""
 
-FORCE_SUBSCRIBE_TEXT = "<b>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</b>"
+FORCE_SUBSCRIBE_TEXT = "<b>Sorry to Say! Your Smartness Won't Work Here 😏....</b>"
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('❗ Help', callback_data='help'),
-        InlineKeyboardButton('About 🤖', callback_data='about'),
+        InlineKeyboardButton('🆘 Help', callback_data='help'),
+        InlineKeyboardButton('👥 About', callback_data='about'),
         ],
         [
-        InlineKeyboardButton('Close ❌', callback_data='close')
+        InlineKeyboardButton('🔐 Close', callback_data='close')
         ]]
     )
 
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('🏘 Home', callback_data='home'),
-        InlineKeyboardButton('About 🤖', callback_data='about'),
+        InlineKeyboardButton('👥 About', callback_data='about'),
         ],
         [
-        InlineKeyboardButton('Close ❌', callback_data='close')
+        InlineKeyboardButton('🔐 Close ', callback_data='close')
         ]]
     )
 
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('🏘 Home', callback_data='home'),
-        InlineKeyboardButton('Help 🖲️', callback_data='help'),
+        InlineKeyboardButton('🆘 Help', callback_data='help'),
         ],
         [
-        InlineKeyboardButton('Close ❌', callback_data='close')
+        InlineKeyboardButton('🔐 Close ', callback_data='close')
         ]]
     )
 
@@ -195,15 +195,15 @@ async def telegraph_upload(bot, update):
             await update.reply_text(
 		  text=FORCE_SUBSCRIBE_TEXT,
 		  reply_markup=InlineKeyboardMarkup(
-			  [[InlineKeyboardButton(text="📢 Join My Updates Channel 📢", url=f"https://telegram.me/{UPDATE_CHANNEL}")]]
+			  [[InlineKeyboardButton(text="🤖 Join My Updates Channel", url=f"https://telegram.me/{UPDATE_CHANNEL}")]]
 		  )
 	    )
             return
         except Exception as error:
             print(error)
-            await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/zautebot'>Developer</a>.", disable_web_page_preview=True)
+            await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/TeleRoid14'>Support Group</a>.", disable_web_page_preview=True)
             return
-    medianame = "./DOWNLOADS/" + "ZauteKm/TGraphRoBot"
+    medianame = "./DOWNLOADS/" + "PredatorHackerzZ/Renamer-Bot"
     text = await update.reply_text(
         text="<code>Downloading to My Server ...</code>",
         disable_web_page_preview=True, reply_to_message_id=update.message_id,
@@ -237,9 +237,9 @@ async def telegraph_upload(bot, update):
             [
                 [
                     InlineKeyboardButton(text="🔗 Open Link", url=f"https://telegra.ph{response[0]}"),
-                    InlineKeyboardButton(text="Share Link 👥", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
+                    InlineKeyboardButton(text="Share Link ♂️", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
                 ],
-                [InlineKeyboardButton(text="❤️ Share & Support Me ❤️", url="https://t.me/share/url?url=Hi%20Friend%2C%0D%0AAm%20Introducing%20a%20Powerful%20%2A%2ATelegraph%20Image%20Upload%20Bot%2A%2A%20for%20Free.%0D%0A%2A%2ABot%20Link%2A%2A%20%3A%20%40TGraphRobot")]
+                [InlineKeyboardButton(text="🔐 Close", url="close")]
             ]
         )
     )
