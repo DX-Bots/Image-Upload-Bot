@@ -79,11 +79,11 @@ FORCE_SUBSCRIBE_TEXT = "<b>Sorry to Say! Your Smartness Won't Work Here 😏....
 START_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('⭕ Channel ⭕', url='https://t.me/TeleRoidGroup'),
-        InlineKeyboardButton('😇 Support', url='https://t.me/TeleRoid14'),
+        InlineKeyboardButton('😇 Support', url='https://t.me/TeleRoid14')
         ],
         [
         InlineKeyboardButton('🆘 Help', callback_data='help'),
-        InlineKeyboardButton('👥 About', callback_data='about'),
+        InlineKeyboardButton('👥 About', callback_data='about')
         ],
         [
         InlineKeyboardButton('🔐 Close', callback_data='close')
@@ -93,7 +93,7 @@ START_BUTTONS = InlineKeyboardMarkup(
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('🏘 Home', callback_data='home'),
-        InlineKeyboardButton('👥 About', callback_data='about'),
+        InlineKeyboardButton('👥 About', callback_data='about')
         ],
         [
         InlineKeyboardButton('🔐 Close ', callback_data='close')
@@ -103,7 +103,7 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('🏘 Home', callback_data='home'),
-        InlineKeyboardButton('🆘 Help', callback_data='help'),
+        InlineKeyboardButton('🆘 Help', callback_data='help')
         ],
         [
         InlineKeyboardButton('🔐 Close ', callback_data='close')
