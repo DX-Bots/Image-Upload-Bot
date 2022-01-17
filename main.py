@@ -207,7 +207,7 @@ async def telegraph_upload(bot, update):
             print(error)
             await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/TeleRoid14'>Support Group</a>.", disable_web_page_preview=True)
             return
-    medianame = "./DOWNLOADS/" + "PredatorHackerzZ/Renamer-Bot"
+    medianame = "./DOWNLOADS/" + "ZauteKm/TGraphRoBot"
     text = await update.reply_text(
         text="<code>Downloading to My Server ...</code>",
         disable_web_page_preview=True, reply_to_message_id=update.message_id,
@@ -235,7 +235,7 @@ async def telegraph_upload(bot, update):
         print(error)
         return
     await text.edit_text(
-        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Thank You For Using Me:- \nPlease Subscribe ❤️ [@ZauteKm](https://t.me/iZaute/6)</b>",
+        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Thank You For Using Me:- \nPlease Subscribe ❤️ [@KDramasFlix](https://t.me/KDramasFlix)</b>",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
