@@ -78,6 +78,10 @@ FORCE_SUBSCRIBE_TEXT = "<b>Sorry to Say! Your Smartness Won't Work Here 😏....
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
+        InlineKeyboardButton(text='⭕ Channel ⭕', url='http://t.me/TeleRoidGroup'),
+        InlineKeyboardButton(text='😇 Support', url='http://t.me/TeleRoid14')
+        ],
+        [
         InlineKeyboardButton('🆘 Help', callback_data='help'),
         InlineKeyboardButton('👥 About', callback_data='about')
         ],
@@ -239,7 +243,7 @@ async def telegraph_upload(bot, update):
                     InlineKeyboardButton(text="🔗 Open Link", url=f"https://telegra.ph{response[0]}"),
                     InlineKeyboardButton(text="Share Link ♂️", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
                 ],
-                [InlineKeyboardButton(text="🔐 Close", url="close")]
+                [InlineKeyboardButton(text="🔐 Close", callback_data="close")]
             ]
         )
     )
